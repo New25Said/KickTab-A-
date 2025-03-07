@@ -13,7 +13,7 @@ body {
     align-items: center;
     padding: 20px;
     width: 100%;
-    max-width: 100vw; /* Asegura que el contenido no se desborde */
+    max-width: 100vw;
 }
 
 header {
@@ -66,14 +66,15 @@ button:hover {
 
 .proxy-section {
     margin-top: 20px;
-    width: 80%; /* Asegura que la sección ocupe el 80% del ancho, aumentando el marco */
-    max-width: 1000px; /* Limita el ancho máximo de la vista previa */
+    width: 100%; /* Ahora ocupa el 100% del ancho */
+    max-width: 100%; /* Evita que el contenedor se quede limitado en pantallas grandes */
+    padding: 0 20px; /* Añadimos algo de espacio a los lados */
 }
 
 iframe {
     width: 100%; /* Hace que el iframe ocupe todo el ancho del contenedor */
     height: 600px; /* Ajusta la altura si es necesario */
-    border: 3px solid #ddd; /* Aumenta el grosor del borde del iframe */
+    border: 5px solid #ddd; /* Aumenta el grosor del borde */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
