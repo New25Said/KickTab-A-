@@ -12,6 +12,8 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    width: 100%;
+    max-width: 100vw; /* Asegura que el contenido no se desborde */
 }
 
 header {
@@ -29,42 +31,50 @@ h2 {
     color: #333;
 }
 
+.input-section {
+    margin-bottom: 40px;
+}
+
 input[type="text"] {
-    padding: 10px;
-    width: 300px;
+    padding: 12px;
+    width: 500px; /* Aumenta el ancho del campo de texto */
     font-size: 1rem;
     margin-right: 10px;
     border: 2px solid #ccc;
     border-radius: 4px;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #ff6347;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-button:hover {
-    background-color: #ff4500;
+    transition: border-color 0.3s;
 }
 
 input[type="text"]:focus {
     border-color: #ff6347;
 }
 
+button {
+    padding: 12px 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff4500;
+}
+
 .proxy-section {
     margin-top: 20px;
-    width: 100%; /* Asegúrate de que la sección ocupe todo el ancho */
+    width: 100%; /* Asegura que la sección ocupe todo el ancho */
 }
 
 iframe {
     width: 100%; /* Hace que el iframe ocupe todo el ancho */
     height: 600px; /* Ajusta la altura si es necesario */
     border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 footer {
