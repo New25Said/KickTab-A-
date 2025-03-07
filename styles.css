@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Asegura que el padding y el border no afecten el tamaño total de los elementos */
 }
 
 body {
@@ -37,7 +37,7 @@ h2 {
 
 input[type="text"] {
     padding: 12px;
-    width: 500px; /* Aumenta el ancho del campo de texto */
+    width: 500px;
     font-size: 1rem;
     margin-right: 10px;
     border: 2px solid #ccc;
@@ -66,21 +66,21 @@ button:hover {
 
 .proxy-section {
     margin-top: 20px;
-    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
-    max-width: 1200px; /* Limita el tamaño máximo del contenedor */
-    padding: 0 20px; /* Añade márgenes a los lados */
+    width: 100%; /* Se asegura de que el contenedor ocupe todo el ancho disponible */
+    max-width: 1200px; /* Establece un límite máximo en el tamaño */
+    padding: 0 20px; /* Añadimos padding para evitar que el iframe toque los bordes */
     display: flex;
-    justify-content: center; /* Centra el contenedor de la vista previa */
+    justify-content: center; /* Centra el contenedor */
 }
 
 iframe {
-    width: 100%; /* Hace que el iframe ocupe todo el ancho disponible del contenedor */
-    max-width: 100%; /* Asegura que no se desborde más allá del contenedor */
-    height: 600px; /* Ajusta la altura si es necesario */
-    border: 5px solid #ddd; /* Aumenta el grosor del borde del iframe */
+    width: 100%; /* Hace que el iframe ocupe todo el ancho del contenedor */
+    height: 600px; /* Ajusta la altura según sea necesario */
+    border: 5px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    object-fit: cover; /* Asegura que el contenido se ajuste correctamente al área del iframe */
+    object-fit: contain; /* Ajusta el contenido dentro del iframe sin distorsionar */
+    max-width: 100%; /* Asegura que el iframe no se desborde más allá de su contenedor */
 }
 
 footer {
