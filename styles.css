@@ -67,18 +67,20 @@ button:hover {
 .proxy-section {
     margin-top: 20px;
     width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
-    max-width: 1200px; /* Establece un límite en el ancho máximo del contenedor */
-    padding: 0 20px; /* Añade un poco de espacio para los márgenes */
+    max-width: 1200px; /* Limita el tamaño máximo del contenedor */
+    padding: 0 20px; /* Añade márgenes a los lados */
     display: flex;
-    justify-content: center; /* Centra el contenedor en el eje horizontal */
+    justify-content: center; /* Centra el contenedor de la vista previa */
 }
 
 iframe {
     width: 100%; /* Hace que el iframe ocupe todo el ancho disponible del contenedor */
+    max-width: 100%; /* Asegura que no se desborde más allá del contenedor */
     height: 600px; /* Ajusta la altura si es necesario */
-    border: 5px solid #ddd; /* Aumenta el grosor del borde */
+    border: 5px solid #ddd; /* Aumenta el grosor del borde del iframe */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover; /* Asegura que el contenido se ajuste correctamente al área del iframe */
 }
 
 footer {
