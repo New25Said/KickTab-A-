@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Asegura que el padding y el border no afecten el tamaño total de los elementos */
+    box-sizing: border-box; /* Asegura que el padding y border no afecten el tamaño */
 }
 
 body {
@@ -66,16 +66,17 @@ button:hover {
 
 .proxy-section {
     margin-top: 20px;
-    width: 100%; /* Se asegura de que el contenedor ocupe todo el ancho disponible */
-    max-width: 1200px; /* Establece un límite máximo en el tamaño */
-    padding: 0 20px; /* Añadimos padding para evitar que el iframe toque los bordes */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    max-width: 1200px; /* Limita el ancho máximo del contenedor */
+    padding: 0 20px; /* Añade márgenes a los lados */
     display: flex;
     justify-content: center; /* Centra el contenedor */
+    overflow: hidden; /* Asegura que el contenido no se desborde */
 }
 
 iframe {
     width: 100%; /* Hace que el iframe ocupe todo el ancho del contenedor */
-    height: 600px; /* Ajusta la altura según sea necesario */
+    height: 600px; /* Ajusta la altura si es necesario */
     border: 5px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
